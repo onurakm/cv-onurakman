@@ -1,0 +1,56 @@
+/* style.css - Onur Akman CV için sade tema */
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+code {
+  background-color: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
