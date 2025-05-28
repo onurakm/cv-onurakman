@@ -1,118 +1,122 @@
-/* Genel ayarlar */
+/* Genel */
 head{
 <link rel="stylesheet" href="style.css" />
 }
 
 body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 750px;
+  background-color: #000000; /* Siyah arka plan */
+  color: #ffffff; /* Beyaz yazılar */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  max-width: 850px;
   margin: 40px auto;
-  padding: 0 25px 50px 25px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
+  padding: 0 40px 60px 40px;
+  line-height: 1.7;
+  font-size: 16px; /* Yazı biraz küçüldü */
 }
 
-/* Başlıklar */
+/* Başlıklar (aynı beyaz renk) */
 h1, h2, h3 {
+  color: #ffffff;
   font-weight: 700;
-  margin-bottom: 0.25em;
-  border-bottom: 2px solid #bb86fc; /* Mor alt çizgi */
-  padding-bottom: 6px;
-  letter-spacing: 0.05em;
-  color: #bb86fc;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5em;
+  font-family: 'Georgia', serif;
 }
 
+/* Başlık boyutları küçültüldü */
 h1 {
-  font-size: 2.8em;
-  margin-top: 0;
+  font-size: 2.8rem; /* Önceki 3.5rem yerine */
+  border-bottom: 2px solid #444444;
+  padding-bottom: 8px;
 }
 
 h2 {
-  font-size: 1.8em;
-  margin-top: 1.5em;
+  font-size: 1.8rem; /* Önceki 2.2rem yerine */
+  border-bottom: 1.5px solid #333333;
+  padding-bottom: 6px;
+  margin-top: 2.5em;
 }
 
 h3 {
-  font-size: 1.4em;
-  margin-top: 1.3em;
-  border-color: #03dac6; /* Mint alt çizgi */
-  color: #03dac6;
+  font-size: 1.3rem; /* Önceki 1.5rem yerine */
+  margin-top: 1.8em;
 }
 
-/* Bölümler arası çizgi */
-hr {
-  border: none;
-  border-top: 1px solid #333;
-  margin: 2em 0;
-}
-
-/* Linkler */
+/* Linkler: açık mavi, beyaz arka plana uygun */
 a {
-  color: #bb86fc;
+  color: #64b5f6;
   text-decoration: none;
-  border-bottom: 1.5px dotted #bb86fc;
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 1.5px solid #64b5f6;
+  transition: all 0.25s ease-in-out;
 }
 
-a:hover, a:focus {
-  color: #e29fff;
-  border-bottom-color: #e29fff;
-  text-decoration: none;
+a:hover {
+  color: #90caf9;
+  border-bottom-color: #90caf9;
 }
 
 /* Paragraflar */
 p {
-  margin-bottom: 1.2em;
-  font-size: 1em;
-  color: #ccc;
+  margin-bottom: 1.4em;
+  font-size: 1rem;
 }
 
 /* Listeler */
 ul {
-  padding-left: 1.2em;
-  margin-bottom: 1.5em;
+  margin-left: 1.8em;
+  margin-bottom: 1.8em;
 }
 
 li {
-  margin-bottom: 0.45em;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 
 /* Kalın yazılar */
 strong {
-  color: #fff;
+  color: #ffffff;
 }
 
-/* İletişim ve önemli bilgiler */
+/* İletişim kutusu */
 .contact-info {
-  background-color: #1f1f1f;
-  padding: 15px 20px;
-  border-left: 6px solid #bb86fc;
-  margin-bottom: 1.5em;
+  background-color: #111111; /* Çok koyu gri, siyahla kontrast */
+  padding: 20px 30px;
+  border-left: 6px solid #64b5f6;
+  margin-bottom: 2.5em;
+  border-radius: 6px;
   font-weight: 600;
-  border-radius: 3px;
-  color: #ddd;
+  color: #ffffff;
 }
 
-/* Küçük metin (footer gibi) */
+/* Ayraç çizgi */
+hr {
+  border: none;
+  border-top: 1px solid #333333;
+  margin: 2.5em 0;
+}
+
+/* Küçük metin */
 .small-text {
-  font-size: 0.85em;
-  color: #666;
+  font-size: 0.85rem;
+  color: #bbbbbb;
   margin-top: 3em;
   text-align: center;
 }
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body {
-    padding: 0 15px 40px 15px;
+    padding: 0 20px 40px 20px;
+    max-width: 100%;
+    font-size: 14px;
   }
   h1 {
-    font-size: 2em;
+    font-size: 2.2rem;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.1rem;
   }
 }
-
