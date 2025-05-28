@@ -1,56 +1,118 @@
-/* style.css - Onur Akman CV için sade tema */
-
-body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-  padding: 2em;
-  background-color: #fdfdfd;
-  color: #333;
+/* Genel ayarlar */
+head{
+<link rel="stylesheet" href="style.css" />
 }
 
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 0 25px 50px 25px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+/* Başlıklar */
 h1, h2, h3 {
-  color: #2c3e50;
-  margin-top: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  border-bottom: 2px solid #bb86fc; /* Mor alt çizgi */
+  padding-bottom: 6px;
+  letter-spacing: 0.05em;
+  color: #bb86fc;
 }
 
 h1 {
-  font-size: 2em;
-  border-bottom: 2px solid #2c3e50;
-  padding-bottom: 0.3em;
+  font-size: 2.8em;
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 1.5em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2em;
+  font-size: 1.8em;
+  margin-top: 1.5em;
 }
 
 h3 {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 1.3em;
+  border-color: #03dac6; /* Mint alt çizgi */
+  color: #03dac6;
 }
 
+/* Bölümler arası çizgi */
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2em 0;
+}
+
+/* Linkler */
 a {
-  color: #2980b9;
+  color: #bb86fc;
+  text-decoration: none;
+  border-bottom: 1.5px dotted #bb86fc;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #e29fff;
+  border-bottom-color: #e29fff;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Paragraflar */
+p {
+  margin-bottom: 1.2em;
+  font-size: 1em;
+  color: #ccc;
 }
 
+/* Listeler */
 ul {
   padding-left: 1.2em;
+  margin-bottom: 1.5em;
 }
 
-section {
-  margin-bottom: 2em;
+li {
+  margin-bottom: 0.45em;
 }
 
-code {
-  background-color: #eee;
-  padding: 0.2em 0.4em;
+/* Kalın yazılar */
+strong {
+  color: #fff;
+}
+
+/* İletişim ve önemli bilgiler */
+.contact-info {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  border-left: 6px solid #bb86fc;
+  margin-bottom: 1.5em;
+  font-weight: 600;
   border-radius: 3px;
+  color: #ddd;
 }
+
+/* Küçük metin (footer gibi) */
+.small-text {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 3em;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 0 15px 40px 15px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
